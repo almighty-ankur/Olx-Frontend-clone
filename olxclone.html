@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Olx</title>
+</head>
+<style type="text/css">
+	.maindiv{
+		border: 1px solid black;
+		height: 100px;
+	}
+	.header{
+		/* border: 1px solid black; */
+		height: 70px;
+		background-color: #f7f8f8;
+	}
+	.logo{
+		/* border: 1px solid black; */
+		height: 50px;
+		width: 50px;
+		margin-left: 10px;
+		margin-top: 5px;
+		float: left;
+	}
+	.location{
+		border: 2px solid black;
+		height: 50px;
+		float: left;
+		width: 21%;
+		margin-left: 10px;
+		margin-top: 5px;
+		background-color: white;
+	}
+	.simg{
+		height: 30px;
+		margin-top: 15px;
+		margin-left: 10px;
+		/* border: 1px solid black; */
+		width: 10%;
+		float: left;
+	}
+	.searchimg{
+		height: 20px;
+	}
+	.input{
+		height: 30px;
+		width: 70%;
+		border: 0px;
+		margin-top: 10px;
+		margin-left: 5px;
+		background-color: white;
+		font-size: large;
+		float: left;
+	}
+	.dropdown{
+		float: left;
+		/* border: 1px solid black; */
+		margin-top: 10px;
+		margin-left: 5px;
+	}
+
+	.searchitems{
+		border: 2px solid black;
+		height: 50px;
+		width: 550px;
+		float: left;
+		margin-left: 20px;
+		margin-top: 5px;
+	}
+	.searchbutton{
+		/* border: 1px solid black; */
+		height: 54px;
+		width: 40px;
+		float: left;
+		margin-top: 5px;
+		background-color: black;
+	}
+	.searchit{
+		/* border: 1px solid black; */
+		height: 46px;
+		
+	}
+	.sc{
+		border: 0px;
+		height: 50px;
+		width: 100%;
+		font-size: medium;
+	}
+	.searchbtn{
+		height: 40px;
+		margin-top: 5px;
+	}
+	.lang{
+		/* border: 1px solid black; */
+		float: left;
+		height: 50px;
+		width: 110px;
+		margin-top: 6px;
+		margin-left: 15px;
+	}
+	p{
+		float: left;
+		margin-left: 5px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 13px;
+		margin-top: 15px;
+	}
+	.dropdown2{
+		float: left;
+		/* border: 1px solid black; */
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+	.login{
+		/* border: 1px solid black; */
+		float: left;
+		height: 50px;
+		width: 50px;
+		text-decoration: underline;
+		color: black;
+		margin-top: 5px;
+		margin-left: 5px;
+	}
+	
+	.sell{
+		/* border: 1px solid black; */
+		height: 60px;
+		float: left;
+		width: 100px;
+		margin-left: 2px;
+	}
+	.loginan{
+		color: black;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 13px;
+	}
+	.category{
+		/* border: 1px solid black; */
+		height: 45px;
+		width: 100%;
+	}
+	.Allcategories{
+		/* border: 1px solid black; */
+		height: 40px;
+		width: 190px;
+		margin-top: 2px;
+		margin-left: 2px;
+		float: left;
+		
+	}
+	.cat{
+		font-size: 16px;
+		font-weight: 700;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		margin-top: 6%;
+	}
+	.services{
+		/* border: 1px solid black; */
+		height: 40px;
+		float: left;
+		width: 60px;
+		margin-left: 20px;
+	}
+	.car{
+		margin-top: 25%;
+	}
+	.services1{
+		/* border: 1px solid black; */
+		height: 40px;
+		float: left;
+		width: 80px;
+		margin-left: 20px;
+	}
+	.services2{
+		/* border: 1px solid black; */
+		height: 40px;
+		float: left;
+		width: 100px;
+		margin-left: 20px;
+	}
+	.services3{
+		/* border: 1px solid black; */
+		height: 40px;
+		float: left;
+		width: 200px;
+		margin-left: 20px;
+	}
+	.services4{
+		/* border: 1px solid black; */
+		height: 40px;
+		float: left;
+		width: 60px;
+		margin-left: 20px;
+	}
+	.services5{
+		/* border: 1px solid black; */
+		height: 40px;
+		float: left;
+		width: 180px;
+		margin-left: 20px;
+	}
+	.services6{
+		/* border: 1px solid black; */
+		height: 40px;
+		float: left;
+		width: 190px;
+		margin-left: 20px;
+	}
+	.banner{
+		/* border: 1px solid black; */
+		height: 130px;
+		width: 100%;
+		background-image: url("https://statics.olx.in/olxin/banners/hero_bg_in_v1@1x.png");
+		background-repeat: no-repeat;
+		background-size:1900px;
+		background-position-x: -330px;
+	}
+	.buttton{
+		/* border: 1px solid black; */
+		width: 100px;
+		height: 50px;
+		margin-left: 670px;
+	}
+	.sellcar{
+		height: 50px;
+		width: 90px;
+		margin-top: 50px;
+		background-color: white;
+		border: 0px;
+	}
+	.bls{
+		/* border: 1px solid black; */
+		height: 350px;
+		width: 98%;
+		margin-top: 70px;
+		margin-left: 10px;
+		background-color: #ebeeef;
+	}
+	.head{
+		/* border: 1px solid black; */
+		height: 50px;
+		margin-top: 1px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.h42{
+		/* border: 1px solid black; */
+		height: 45px;
+		width: 25%;
+		margin-top: 2px;
+		float: left;
+	}
+	.text{
+		font-size: x-large;
+		margin-top: 3%;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #002f34;
+		margin-left: 10px;
+		
+	}
+	.viewmore{
+		/* border: 1px solid black; */
+		height: 45px;
+		width: 100px;
+		float: left;
+		margin-top: 2px;
+		margin-left: 66%;
+	}
+	.text2{
+		color:#002f34;
+		font-weight: 700;
+		font-family: Arial;
+		text-decoration: underline;
+		margin-left: 20px;
+		font-size: 13px;
+	}
+	.mid{
+		/* border: 1px solid black; */
+		height: 280px;
+	}
+	.mid1{
+		border: 1px solid #cecccd;
+		height: 270px;
+		width: 285px;
+		margin-left: 15px;
+		float: left;
+		background-color: white;
+		margin-top: 5px;
+	}
+	.bluebox{
+		/* border: 1px solid black; */
+		background-color: #3a77ff;
+		height: 260px;
+		width: 285px;
+		margin-left: 15px;
+		float: left;
+		margin-top: 10px;
+		/* background-color: white; */
+	}
+	.blueboxbtn{
+		/* border:1px solid black; */
+		margin-top: 70%;
+		height: 58px;
+	}
+	.actualbtn{
+		height: 40px;
+		width: 80%;
+		margin-left: 20px;
+		margin-top: 10px;
+		background-color: #3a77ff;
+		border: 2px solid white;
+		color: white;
+		font-weight: bold;
+	}
+	.prods{
+		/* border: 1px solid black; */
+		height: 59%;
+		width: 99%;
+		margin-left: 2px;
+		margin-top: 10px;
+		
+	}
+	.img2{
+		height: 150px;
+		margin-left: 100px;
+		float: left;
+	}
+	.img4{
+		height: 150px;
+		margin-left: 40px;
+		float: left;
+	}
+	.img5{
+		height: 150px;
+		margin-left: 80px;
+		float: left;
+	}
+	.about{
+		/* border: 1px solid black; */
+		height: 35%;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.heart{
+		/* border: 1px solid black; */
+		height: 30px;
+		width: 30px;
+		float: left;
+		margin-left: 29%;
+		margin-top: 2px;
+	}
+	.heart2{
+		/* border: 1px solid black; */
+		height: 30px;
+		width: 30px;
+		float: left;
+		margin-left: 9%;
+		margin-top: 2px;
+	}
+	.heart3{
+		/* border: 1px solid black; */
+		height: 30px;
+		width: 30px;
+		float: left;
+		margin-left: 3%;
+		margin-top: 2px;
+	}
+	.heart4{
+		/* border: 1px solid black; */
+		height: 30px;
+		width: 30px;
+		float: left;
+		margin-left: 20%;
+		margin-top: 2px;
+	}
+	.h23{
+		/* border: 1px solid black; */
+		margin-top: 0%;
+		margin-left: 20px;
+		width: 200px;
+		margin-bottom: 0%;
+		color: #002f34;
+	}
+	.p23{
+		/* border: 1px solid black; */
+		margin-top: 2px;
+		margin-left: 20px;
+		margin-bottom: 0%;
+		
+	}
+	.p24{
+		margin-top: 2%;
+		margin-left: 20px;
+		font-size: 14px;
+		color: gray;
+	}
+	.p25{
+		margin-top: 0px;
+		margin-left: 85%;
+		color: gray;
+		font-size: 10px;
+	}
+	.p26{
+		margin-top: 35px;
+		margin-left: 85%;
+		color: gray;
+		font-size: 10px;
+	}
+	.img3{
+		height: 150px;
+		float: left;
+		margin-left: 50px;
+	}
+	.fr{
+		/* border: 1px solid black; */
+		height: 650px;
+		width: 100%;
+		margin-top: 35px;
+	}
+	.frtext{
+		/* border: 1px solid black; */
+		height: 50px;
+		width: 30%;
+		margin-left: 20px;
+	}
+	.frtext p{
+		/* border: 1px solid black; */
+		font-size: x-large;
+		margin-left: 20px;
+		font-weight: 100;
+		margin-top: 2%;
+		margin-bottom: 0%;
+	}
+	/* .frboxes{
+		border: 1px solid black;
+		height: 230px;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		width: 20%;
+	} */ 
+	.loadmore{
+		/* border: 1px solid black; */
+		height: 150px;
+		margin-top: 2px;
+	}
+	.lmbtn{
+		height: 50px;
+		width: 100px;
+		margin-left: 40%;
+		background-color: white;
+		font-size: 15px;
+		font-weight: bold;
+		margin-top: 10px;
+		color: #002f34;
+	}
+	.footerbanner{
+		/* border: 1px solid black; */
+		height: 200px;
+		width: 100%;
+		margin-right: 0%;
+		background-color: #f7f8f8ee;
+	}
+	.fblp{
+		float: left;
+		/* border: 1px solid black; */
+		height: 190px;
+		width: 70%;
+		margin-top: 5px;
+		margin-left: 2px;
+	}
+	.fbimg{
+		float: left;
+	}
+	.fbtext{
+		/* border: 1px solid black; */
+		height: 160px;
+		width: 51%;
+		float: left;
+		margin-top: 10px;
+	}
+	.fbrp{
+		/* border: 1px solid black; */
+		height: 190px;
+		width: 345px;
+		float: left;
+		margin-left: 5px;
+		margin-top: 5px;
+		
+	}
+	.fbrptext{
+		/* border: 1px solid black;		 */
+		width: 50%;
+		margin-top: 40px;
+		margin-left: 2px;
+		height: 40px;
+	}
+	.footer{
+		/* border: 1px solid black; */
+		height: 180px;
+		width: 100%;
+		background-color: #ebeeef;
+
+	}
+	.fboxes{
+		/* border: 1px solid black; */
+		height: 170px;
+		width: 17%;
+		float: left;
+		margin-left: 10px;
+		margin-top: 5px;
+	}
+	.fbox2{
+		/* border: 1px solid black; */
+		height: 170px;
+		width: 25%;
+		float: left;
+		margin-left: 20px;
+		margin-top: 5px;
+	}
+	.boxheadingtext{
+		color: #002f34;
+		font-size: 18px;
+	}
+	.boxlistext{
+		color: #446063;
+		font-size: 14px;
+		margin-top: 8%;
+	}
+	.listext{
+		margin-top: 5px;
+	}
+	.smmimg{
+		/* border: 1px solid black; */
+		height: 40px;
+		width: 170px;
+		margin-left: 90px;
+	}
+	.smimg{
+		height: 30px;
+		margin-left: 3px;
+	}
+	.devicesimg{
+		/* border: 1px solid black; */
+		margin-top: 60px;
+		margin-left: 90px;
+	}
+	.lastthing{
+		/* border: 1px solid black; */
+		height: 60px;
+		background-color: #002f34;
+
+	}
+	.countries{
+		/* border: 1px solid white; */
+		height: 50px;
+		width: 350px;
+		margin-left: 20px;
+		margin-top: 5px;
+		float: left;
+	}
+	.leftside{
+		/* border: 1px solid black; */
+		height: 50px;
+		width: 300px;
+		float: left;
+		margin-left: 45%;
+		margin-top: 5px;
+	}
+</style>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="/institute/olx/imgs/logo.png">
+		</div>
+		<div class="location">
+			<div class="simg">
+				<img class="searchimg" src="/institute/olx/imgs/search.png">
+			</div>
+			<div class="search">
+				<input class="input" type="search" value="India">
+			</div>
+			<div class="dropdown">
+				<img class="dropdownimg" src="/institute/olx/imgs/dropdown.png">
+			</div>
+		</div>
+		<div class="searchitems">
+			<div class="searchit">
+				<input class="sc" type="search" placeholder="Find Cars, Mobile Phones and More...">
+			</div>
+		</div>
+		<div class="searchbutton">
+			<img class="searchbtn" src="/institute/olx/imgs/transparent-bg-+-shadow-designify.png">
+		</div>
+		<div class="lang">
+			<p><b>ENGLISH</b></p>
+			<div class="dropdown2">
+				<img class="dropdownimg" src="/institute/olx/imgs/dropdown.png">
+			</div>
+		</div>
+		<div class="login">
+			<a class="loginan" href="#">
+				<h3>Login</h3>
+			</a>
+		</div>
+		<div class="sell">
+			<a href="#">
+				<img src="/institute/olx/imgs/sell.png" alt="">
+			</a>
+		</div>
+	</div>
+	<div class="category">
+		<div class="Allcategories">
+			<p class="cat">ALL CATEGORIES</p>
+			<div class="dropdown2">
+				<img class="dropdownimg" src="/institute/olx/imgs/dropdown.png">
+			</div>
+		</div>
+		<div class="services">
+			<p class="car">Cars</p>
+		</div>
+		<div class="services1">
+			<p>MotorCycles</p>
+		</div>
+		<div class="services2">
+			<p>Mobile Phones</p>
+	
+		</div>
+		<div class="services3">
+			<p>For Sale: Houses & Apartments</p>
+		</div>
+		<div class="services4">
+			<p>Scooters</p>
+		</div>
+		<div class="services5">
+			<p>Commercial & Other Vehicles</p>
+	
+		</div>
+		<div class="services6">
+			<p>For Rent: Houses & Apartments</p>
+	
+		</div>
+	</div>
+	<div class="banner">
+		<div class="buttton">
+			<button class="sellcar"><b style="font-size: medium;">Sell Car</b></button>
+		</div>
+	</div>
+	<div class="bls">
+		<div class="head">
+			<div class="h42">
+				<p class="text">Based on your last search</p>
+			</div>
+			<div class="viewmore">
+				<a href="#"><p class="text2">View more</p></a>
+			</div>
+		</div>
+		<div class="mid">
+			<div class="mid1">
+				<div class="prods">
+					<img class="img2" src="https://apollo-singapore.akamaized.net/v1/files/0fhig0egcxtu1-IN/image;s=200x400;q=60">
+					<div class="heart">
+						<img src="/institute/olx/imgs/heart.png" alt="">
+					</div>
+				</div>
+				<div class="about">
+					<h2 class="h23">$ 7,50,000</h2>
+					<p class="p23">2017 - 112000.0 Km</p>
+					<p class="p24">Maruti Suzuki Vitara Brezza Vdi, 2017...</p>
+					<p class= "p25">Apr 23</p>
+				</div>
+			</div>
+			<div class="mid1">
+				<div class="prods">
+					<img class="img3" src="https://apollo-singapore.akamaized.net/v1/files/5735dsjnzqs8-IN/image;s=200x400;q=60">
+					<div class="heart2">
+						<img src="/institute/olx/imgs/heart.png" alt="">
+					</div>
+				</div>
+				<div class="about">
+					<h2 class="h23">$ 5,00,000</h2>
+					<p class="p23">2015 - 134,000 Km</p>
+					<p class="p24">Toyota Etios Liva 1.4 GD,2015, Diesel...</p>
+					<p class= "p25">MAY 23</p>
+				</div>
+			</div>
+			<div class="mid1">
+				<div class="prods">
+					<img class="img4" src="https://apollo-singapore.akamaized.net/v1/files/sqolhyi20e961-IN/image;s=200x400;q=60" alt="">
+					<div class="heart3">
+						<img src="/institute/olx/imgs/heart.png" alt="">
+					</div>
+				</div>
+				<div class="about">
+					<h2 class="h23">$ 17,50,000</h2>
+					<p class="p23">1 Bds - 1 Ba - 450 ft2</p>
+					<p class="p24">17 Lakh main 1bhk flat greater noida...</p>
+					<p class= "p25">MAY 13</p>
+				</div>
+			</div>
+			<div class="mid1">
+				<div class="prods">
+					<img class="img4" src="https://apollo-singapore.akamaized.net/v1/files/emp78hcbbk9e1-IN/image;s=200x400;q=60" alt="">
+					<div class="heart2">
+						<img src="/institute/olx/imgs/heart.png" alt="">
+					</div>
+				</div>
+				<div class="about">
+					<h2 class="h23">$ 3,700</h2>
+					<p class="p23">Samsung J2.cole</p>
+					<p class= "p26">Apr 23</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="fr">
+		<div class="frtext">
+			<p>Fresh Recommendations</p>
+		</div>
+		<div class="mid1">
+			<div class="prods">
+				<img class="img5" src="https://apollo-singapore.akamaized.net/v1/files/yby7o56vuerb1-IN/image;s=200x400;q=60">
+				<div class="heart4">
+					<img src="/institute/olx/imgs/heart.png">
+				</div>
+			</div>
+			<div class="about">
+				<h2 class="h23">$ 17,50,000</h2>
+				<p class="p23">1 Bds - 1 Ba - 450 ft2</p>
+				<p class="p24">17 Lakh main 1bhk flat greater noida...</p>
+				<p class= "p25">MAY 13</p>
+			</div>
+		</div>
+		<div class="mid1">
+			<div class="prods">
+				<img class="img5" src="https://apollo-singapore.akamaized.net/v1/files/sqc921s6dvkf-IN/image;s=200x400;q=60">
+				<div class="heart4">
+					<img src="/institute/olx/imgs/heart.png">
+				</div>
+			</div>
+			<div class="about">
+				<h2 class="h23">$ 17,50,000</h2>
+				<p class="p23">1 Bds - 1 Ba - 450 ft2</p>
+				<p class="p24">17 Lakh main 1bhk flat greater noida...</p>
+				<p class= "p25">MAY 13</p>
+			</div>
+		</div>
+		<div class="mid1">
+			<div class="prods">
+				<img class="img5" src="https://apollo-singapore.akamaized.net/v1/files/4mir9rz77i083-IN/image;s=200x400;q=60">
+				<div class="heart4">
+					<img src="/institute/olx/imgs/heart.png">
+				</div>
+			</div>
+			<div class="about">
+				<h2 class="h23">$ 17,50,000</h2>
+				<p class="p23">1 Bds - 1 Ba - 450 ft2</p>
+				<p class="p24">17 Lakh main 1bhk flat greater noida...</p>
+				<p class= "p25">MAY 13</p>
+			</div>
+		</div>
+		<div class="mid1">
+			<div class="prods">
+				<img class="img5" src="https://apollo-singapore.akamaized.net/v1/files/u6kv72zckwtt-IN/image;s=200x400;q=60">
+				<div class="heart4">
+					<img src="/institute/olx/imgs/heart.png">
+				</div>
+			</div>
+			<div class="about">
+				<h2 class="h23">$ 17,50,000</h2>
+				<p class="p23">1 Bds - 1 Ba - 450 ft2</p>
+				<p class="p24">17 Lakh main 1bhk flat greater noida...</p>
+				<p class= "p25">MAY 13</p>
+			</div>
+		</div>
+		<div class="mid1">
+			<div class="prods">
+				<img class="img5" src="https://apollo-singapore.akamaized.net/v1/files/u6kv72zckwtt-IN/image;s=200x400;q=60">
+				<div class="heart4">
+					<img src="/institute/olx/imgs/heart.png">
+				</div>
+			</div>
+			<div class="about">
+				<h2 class="h23">$ 17,50,000</h2>
+				<p class="p23">1 Bds - 1 Ba - 450 ft2</p>
+				<p class="p24">17 Lakh main 1bhk flat greater noida...</p>
+				<p class= "p25">MAY 13</p>
+			</div>
+		</div>
+		<div class="bluebox">
+			<p style="margin-left: 20px; color: white; font-size: large; font-weight: bold;">Want to see your stuff here?</p>
+			<p style="margin-left: 15px; color: white; font-size: 15px;">Make Some extra cash by selling things in your community. Go on,it's quick and <span style="margin-left: 100px;">easy.</span></p>
+			<div class="blueboxbtn">
+				<button class="actualbtn">Start Selling</button>
+			</div>
+		</div>
+		<div class="mid1">
+			<div class="prods">
+				<img class="img5" src="https://apollo-singapore.akamaized.net/v1/files/u6kv72zckwtt-IN/image;s=200x400;q=60">
+				<div class="heart4">
+					<img src="/institute/olx/imgs/heart.png">
+				</div>
+			</div>
+			<div class="about">
+				<h2 class="h23">$ 17,50,000</h2>
+				<p class="p23">1 Bds - 1 Ba - 450 ft2</p>
+				<p class="p24">17 Lakh main 1bhk flat greater noida...</p>
+				<p class= "p25">MAY 13</p>
+			</div>
+		</div>
+		<div class="mid1">
+			<div class="prods">
+				<img class="img5" src="https://apollo-singapore.akamaized.net/v1/files/u6kv72zckwtt-IN/image;s=200x400;q=60">
+				<div class="heart4">
+					<img src="/institute/olx/imgs/heart.png">
+				</div>
+			</div>
+			<div class="about">
+				<h2 class="h23">$ 17,50,000</h2>
+				<p class="p23">1 Bds - 1 Ba - 450 ft2</p>
+				<p class="p24">17 Lakh main 1bhk flat greater noida...</p>
+				<p class= "p25">MAY 13</p>
+			</div>
+		</div>
+	</div>
+	<div class="loadmore">
+			<button class="lmbtn">LoadMore</button>
+	</div>
+	<div class="footerbanner">
+		<div class="fblp">
+			<div class="fbimg">
+				<img height="190px" src="https://statics.olx.in/external/base/img/phone-app.webp">
+			</div>
+			<div class="fbtext">
+				<h1 style="color: #002f34; margin-left: 80px; margin-bottom: 0%;">TRY THE OLX APP</h1>
+				<p style="color:#002f34; margin-left: 80px; font-size: large;">Buy, sell and find just about anything using the app on your mobile.</p>
+			</div>
+		</div>
+		
+		<div style="border: gray 1px solid; height: 150px;margin-top: 20px; width: 0px; float: left; margin-left: 1%; float: left;">
+
+		</div>
+		<div class="fbrp">
+			<div class="fbrptext">
+				<p style="margin-left: 20px; font-size:13px; color: #002f34; font-weight: bold; margin-bottom: 0%;">GET YOUR APP TODAY</p>
+			</div>
+			<div style=" width: 100%; height: 50px; margin-top: 5px; margin-left: 20px;">
+				<img style="height: 40px;" src="https://statics.olx.in/external/base/img/appstore_2x.png">
+				<img style="height: 40px;" src="https://statics.olx.in/external/base/img/playstore_2x.webp">
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="fboxes">
+			<h3 class="boxheadingtext" style="margin-top: 5%;margin-bottom: 0%; margin-left: 40px;">Popular Location</h3>
+			<ul class="boxlistext" type="none">
+				<li class="listext">Kolkata</li>
+				<li class="listext">Mumbai</li>
+				<li class="listext">Delhi</li>
+				<li class="listext">Chennai</li>
+			</ul>
+		</div>
+		<div class="fboxes">
+			<h3 class="boxheadingtext" style="margin-top: 5%;margin-bottom: 0%; margin-left: 40px;">Trending Locations</h3>
+			<ul class="boxlistext" type="none">
+				<li class="listext">Bhubaneshwar</li>
+				<li class="listext">Hyderabad</li>
+				<li class="listext">Chandigarh</li>
+				<li class="listext">Nashik</li>
+			</ul>
+		</div>
+		<div class="fboxes">
+			<h3 class="boxheadingtext" style="margin-top: 5%;margin-bottom: 0%; margin-left: 40px;">ABOUT US</h3>
+			<ul class="boxlistext" type="none">
+				<li class="listext">About OLX Group</li>
+				<li class="listext">Careers</li>
+				<li class="listext">Contact Us</li>
+				<li class="listext">OLXPeople</li>
+				<li class="listext">Waah Jobs</li>
+			</ul>
+		</div>
+		<div class="fboxes">
+			<h3 class="boxheadingtext" style="margin-top: 5%;margin-bottom: 0%; margin-left: 40px;">OLX</h3>
+			<ul class="boxlistext" type="none">
+				<li class="listext">Help</li>
+				<li class="listext">Sitemap</li>
+				<li class="listext">Legal & Privacy Information</li>
+				<li class="listext">Blog</li>
+			</ul>
+		</div>
+		<div class="fbox2">
+			<h3 class="boxheadingtext" style="margin-top: 5%; margin-bottom: 0%; margin-left: 100px;">FOLLOW US</h3>
+			<div class="smmimg">
+				<img class="smimg" src="/institute/olx/imgs/sm/fb.png">
+				<img class="smimg" src="/institute/olx/imgs/sm/ig.png">
+				<img class="smimg" src="/institute/olx/imgs/sm/twitter.png">
+				<img class="smimg" src="/institute/olx/imgs/sm/YT.png">
+			</div>
+			<div class="devicesimg">
+				<img src="https://statics.olx.in/external/base/img/playstore.webp">
+				<img src="https://statics.olx.in/external/base/img/appstore.webp">
+			</div>
+
+		</div>
+	</div>
+	<div class="lastthing">
+		<div class="countries">
+			<p style="color: white;"><span style="font-weight: bold;">Other Countries</span><span style="margin-left: 10px;">Pakistan - </span>South Africa - Indonesia</p>
+		</div>
+		<div class="leftside">
+			<p style="color: white;"><span style="font-weight: bolder;">Free Classifieds in India</span> <span style=" margin-left: 10px;">. © 2006-2022 OLX</spa></p>
+		</div>
+	</div>
+</body>
+</html>
